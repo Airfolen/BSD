@@ -1,5 +1,6 @@
 ﻿using BSD.Benchmarks;
 using BSD.Operations;
+using System;
 
 namespace BSD
 {
@@ -26,8 +27,13 @@ namespace BSD
 
             MatlabOperations.Figure();
             var figure2 = MatlabOperations.PlotGraphAndHistory(tmp, final.GetEdgesHistory(), "Морализованный граф");
-            MatlabOperations.Pause();
+            MatlabOperations.Pause(5);
 
+            var secondStage = graph1.TriangulateGraph(final);
+            MatlabOperations.Figure();
+            var figure3 = MatlabOperations.PlotGraph(secondStage, "Триангулированный граф");
+            MatlabOperations.Pause();
+            
 
             //BenchmarksHelper.PrintBenchmarksResultInMatlab(new MoralizationAlgorithm(), 0, 100, 5,
             //    title: "Бенчмарк для морализации", xLabel: "Число вершин", y1Label: "Время, мс.", y2Label: "Память, МБ");

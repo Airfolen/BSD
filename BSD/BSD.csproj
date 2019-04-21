@@ -56,6 +56,7 @@
     <Compile Include="Benchmarks\Estimator\СomplicationEstimator.cs" />
     <Compile Include="Benchmarks\BenchmarksHelper.cs" />
     <Compile Include="Benchmarks\MoralizationAlgorithm.cs" />
+    <Compile Include="Comparers\EnumerableComparer.cs" />
     <Compile Include="Graphs\DirectedGraph.cs" />
     <Compile Include="Graphs\EdgesHistory.cs" />
     <Compile Include="Operations\FileOperations.cs" />

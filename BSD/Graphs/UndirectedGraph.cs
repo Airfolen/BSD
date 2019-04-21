@@ -66,6 +66,11 @@ namespace BSD.Graphs
             return _edgesHistory;
         }
 
+        public List<string[]> GetEdges()
+        {
+            return _edges;
+        }
+
         public void InitVertices(IEnumerable<string> vertices)
         {
             _all = vertices as List<string>;
